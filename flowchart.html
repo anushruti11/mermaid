@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/mermaid@8.6.0/dist/mermaid.min.js"></script>
+    <style type="text/css">
+    .mermaid{
+        background:aquamarine;
+  
+    }
+    </style>
+    <script>
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+      <div class="mermaid">
+        
+        graph TD 
+    A([Start])--> B(You started using a new product) --> C{Did You find it useful?}  
+        C -->|Yes| D[Continue using]  
+        C -->|No| E[Discontinue using] 
+      </div>
+  </body>
+</html>
